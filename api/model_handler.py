@@ -6,7 +6,7 @@ import numpy as np
 app = Flask(__name__)
 
 # Load the pre-trained Naive Bayes model
-model = joblib.load("api/naive_bayes_model.pkl")
+model = joblib.load("api/model.pkl")
 
 @app.route("/predict", methods=["POST"])
 def predict():
